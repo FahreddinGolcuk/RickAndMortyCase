@@ -4,9 +4,13 @@ import { normalize } from '@Plugins/Device';
 import { Character } from '@Modals/RickAndMorty';
 import _style from './style';
 
-const Character: React.FunctionComponent<{
+interface CharacterProps {
   item: Character;
-}> = ({ item }: any): JSX.Element => {
+}
+
+const CharacterItem: React.FunctionComponent<CharacterProps> = ({
+  item,
+}): JSX.Element => {
   return (
     <View style={_style.container}>
       <TouchableOpacity
@@ -25,4 +29,4 @@ const Character: React.FunctionComponent<{
   );
 };
 
-export default Character;
+export default CharacterItem;
