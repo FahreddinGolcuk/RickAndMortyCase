@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Text, View } from 'react-native';
 import RickAndMortyService from '@Services/RickAndMortyService';
 import { CharacterItem } from '@Components/index';
 import { Character } from '@Modals/RickAndMorty';

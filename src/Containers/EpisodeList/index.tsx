@@ -6,12 +6,14 @@ import { Background, EpisodeItem } from '@Components/index';
 
 const EpisodeList: React.FunctionComponent = (): JSX.Element => {
   const [list, setList] = useState<Array<Episode>>([]);
+
   useEffect(() => {
     (async () => {
       const result = await RickAndMortyService.getEpisodeList();
       setList(result);
     })();
   }, []);
+
   return (
     <Background>
       <FlatList
