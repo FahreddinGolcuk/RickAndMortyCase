@@ -18,6 +18,7 @@ const EpisodeItem: React.FunctionComponent<EpisodeProps> = ({
       onPress={() =>
         NavigationHelper.navigate(NavigationNames.episodeDetail, {
           id: item.id,
+          episode: item.episode,
         })
       }
       style={_style.container}>

@@ -21,7 +21,6 @@ const EpisodeDetail: React.FunctionComponent = ({ route }): JSX.Element => {
   return (
     <Background>
       <Text style={_style.text}>{detail.name}</Text>
-      <Text style={[_style.text, { color: 'tomato' }]}>{detail.episode}</Text>
       <FlatList
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{ paddingBottom: deviceHeight() / 8 }}

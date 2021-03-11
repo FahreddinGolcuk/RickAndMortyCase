@@ -22,6 +22,10 @@ const Navigators = () => {
         <Stack.Screen
           name={NavigationNames.episodeDetail}
           component={EpisodeDetail}
+          options={({ route }) => ({
+            title: route?.params?.episode,
+            headerTitleStyle: { color: 'tomato' },
+          })}
         />
         <Stack.Screen
           name={NavigationNames.characterDetail}
