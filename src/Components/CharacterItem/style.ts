@@ -1,4 +1,5 @@
 import { ViewStyle, StyleSheet } from 'react-native';
+import { normalize } from '@Plugins/Device';
 
 interface StyleProps {
   container: ViewStyle;
@@ -6,8 +7,9 @@ interface StyleProps {
 
 export default StyleSheet.create<StyleProps>({
   container: {
-    margin: 4,
+    flex: 1,
+    alignItems: 'center',
+    marginTop: normalize(8),
     backgroundColor: '#e7ede6',
-    flexDirection: 'row',
   },
 });

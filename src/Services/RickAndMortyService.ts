@@ -12,10 +12,8 @@ const RickAndMortyService = {
     );
     return result.data;
   },
-  getCharacter: async (id: string): Promise<Character> => {
-    const result = await axios.get(
-      `https://rickandmortyapi.com/api/character/${id}`,
-    );
+  getCharacter: async (url: string): Promise<Character> => {
+    const result = await axios.get(`${url}`);
     return result.data;
   },
 };

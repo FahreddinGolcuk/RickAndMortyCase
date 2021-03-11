@@ -30,7 +30,7 @@ export default StyleSheet.create<StyleProps>({
   },
   title: {
     color: 'white',
-    fontSize: normalize(20),
+    fontSize: normalize(16),
   },
   xSmall: {
     width: '20%',

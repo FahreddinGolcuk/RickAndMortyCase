@@ -11,11 +11,11 @@ export default StyleSheet.create<StyleProps>({
     marginHorizontal: 4,
     marginBottom: 2,
     backgroundColor: '#e7ede6',
-    height: deviceHeight() / 11,
+    height: deviceHeight() / 12,
   },
   text: {
     fontWeight: 'bold',
-    fontSize: normalize(17),
+    fontSize: normalize(20),
     color: '#54575c',
   },
 });
